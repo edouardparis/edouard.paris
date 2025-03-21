@@ -1,7 +1,8 @@
 <div class="latest">
     <ul>
         {{ $section := .Get "section" }}
-        {{ $posts := (where .Site.RegularPages "Type" $section).ByDate.Reverse | first 5 }}
+        {{ $all := where .Site.RegularPages "Type" $section }}
+        {{ $posts := $all.ByDate.Reverse | first 5 }}
         {{ range $posts }}
         <li>
             <span>
@@ -16,8 +17,8 @@
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
         {{ end }}
-        {{ if gt (len $posts) 5 }}
-        <li><a href="{{ $section }}">(...{{len $posts}} {{ $section }})</a></li>
+        {{ if gt (len $all) 5 }}
+        <li><a href="{{ $section }}">(...{{ len $all}} {{ $section }})</a></li>
         {{ end }}
     </ul>
 </div>
