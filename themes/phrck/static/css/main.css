@@ -6,10 +6,14 @@ body {
     font-size: 9pt;
     font-family: 'Fira Code', monospace;
     color: #1F2429;
-    background-color: hsla(0, 0%, 97%, 1);
+    background-color: hsla(0, 0%, 93%, 1);
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+main {
+    background-color: hsla(0, 0%, 97%, 1);
 }
 
 h1,
@@ -182,6 +186,10 @@ section a {
 .sidenote {
     font-size: 7pt;
     max-width: calc(1440px/4);
+}
+
+.sidenote>code {
+    font-size: 7pt;
 }
 
 .sidenote>blockquote {
