@@ -3,7 +3,7 @@
 
 html,
 body {
-    font-size: 10pt;
+    font-size: 9pt;
     font-family: 'Fira Code', monospace;
     color: #1F2429;
     background-color: hsla(0, 0%, 97%, 1);
@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ blockquote {
 }
 
 code {
-    font-size: 10pt;
+    font-size: 9pt;
     font-family: 'Fira Code', monospace;
     background-color: #fff;
 }
@@ -131,7 +131,7 @@ blockquote {
 .article-body>img {
     padding-left: 0;
     padding-right: 0;
-    max-width: 80ch;
+    max-width: 70ch;
 }
 
 .section-body>p,
@@ -152,7 +152,7 @@ main {
     border-right: 1px solid #ddd8dd;
     border-left: 1px solid #ddd8dd;
     display: block;
-    max-width: 1440px;
+    max-width: calc(140ch + 10rem);
     min-height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -160,7 +160,7 @@ main {
 
 section {
     display: block;
-    width: calc(80ch + 5rem);
+    width: calc(70ch + 5rem);
     border-right: 1px solid #ddd8dd;
     min-height: 100vh;
     padding-top: 1rem;
@@ -180,7 +180,7 @@ section a {
 }
 
 .sidenote {
-    font-size: 8pt;
+    font-size: 7pt;
     max-width: calc(1440px/4);
 }
 
@@ -212,7 +212,7 @@ section a {
 @media not all and (max-width: 43.6rem) {
     aside {
         position: absolute;
-        margin-left: calc(80ch + 6.5rem);
+        margin-left: calc(70ch + 6.5rem);
         min-width: 50ch;
     }
 }
@@ -322,7 +322,7 @@ td:first-child {
 
 .article-body img {
     display: block;
-    max-width: calc(80ch + 5rem - 10px);
+    max-width: calc(70ch + 5rem - 10px);
     margin: auto;
 }
 
