@@ -192,6 +192,13 @@ section a {
     font-size: 7pt;
 }
 
+.language-sidenote-ascii-art {
+    margin: 0;
+    color: black;
+    display: block;
+    background-color: transparent;
+}
+
 .sidenote>blockquote {
     margin: 0;
     padding: 0;
