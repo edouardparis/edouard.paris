@@ -23,7 +23,7 @@ with a strong interest in p2p networks and cryptography.
 Find me on:
 
 [GitHub](https://github.com/edouardparis)
-/ [BlueSky](https://bsky.app/profile/edouard.paris)
+/ [Bluesky](https://bsky.app/profile/edouard.paris)
 / [LinkedIn](https://www.linkedin.com/in/parisedouard/)
 
 
