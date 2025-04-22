@@ -1,0 +1,14 @@
+{
+  "names": {
+    "edouard": "7190be56468baf1b7b11fdb4d3fe0474a822cb8f98198487bbe3fd2200fd0e47"
+  },
+  "relays": {
+    "ccac436aec1c1ec2ae514ade0b864e337b04cd30cc21c50d73e0aeb0d4fad715": [
+      "wss://relay.primal.net/",
+      "wss://bitcoiner.social/",
+      "wss://relay.damus.io/",
+      "wss://relay.nostr.band/",
+      "wss://nostr.zbd.gg/"
+    ]
+  }
+}
