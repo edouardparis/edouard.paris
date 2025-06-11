@@ -20,12 +20,11 @@ My name is Édouard Paris.
 
 I am a French engineer in computer science and applied mathematics,
 with a strong interest in p2p networks and cryptography.
-Find me on:
 
-[GitHub](https://github.com/edouardparis)
-/ [Bluesky](https://bsky.app/profile/edouard.paris)
-/ [LinkedIn](https://www.linkedin.com/in/parisedouard/)
-
+Social networks: [Bluesky](https://bsky.app/profile/edouard.paris)
+/ [LinkedIn](https://www.linkedin.com/in/parisedouard/) \
+Code repositories: [GitHub](https://github.com/edouardparis)
+/ [Tangled](https://tangled.sh/@edouard.paris)
 
 
 Find all my writing content in [/archives](/archives).
