@@ -1,0 +1,14 @@
+<aside>
+    <div class="sidenote">
+        {{ .Get "alt" }}
+    </div>
+</aside>
+{{ if eq (.Get "kind") "video" }}
+<div class="article-body-video">
+    <video controls>
+        <source src="{{ .Get "pds" }}/xrpc/com.atproto.sync.getBlob?did={{ .Get "did" }}&cid={{ .Get "cid" }}"
+            type="video/mp4">
+    </video>
+</div>
+{{ else }}
+{{ end }}
