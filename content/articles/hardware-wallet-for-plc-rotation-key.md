@@ -94,14 +94,24 @@ Hardware wallet are the name given in the cryptocurrency sector to hardware devi
 holding secret keys. They generally contain a chip known as a secure element,
 which handles cryptography for the user, eliminating the need to trust the laptop.
 
+I took the opportunity to use one of these devices with the largest screen (the Ledger Stax)
+to demonstrate an app I am developing to manage PLC operations.
+
 ## A Vanadium app for Ledger device that manages PLC operations
 
-I took the opportunity to use one of these devices with the largest screen to
-demonstrate an app I am developing to manage PLC operations.
+Ledger engineer, Salvatore Ingala is working on a fantastic project that I think
+will revolutionize the way of developing application on Hardware wallet devices:
+[Vanadium](https://github.com/LedgerHQ/vanadium), a Risc-V Virtual Machine
+that runs in an embedded Secure Element.
+
+
+### Generating a DID key
 
 The device stores the seed of the private key in its secure element. We simply
 need to ask it to generate a public key from this seed and display it to us in
-the DID format. I have chosen the m/🦋'/0 derivation path.
+the DID format. To generate the key, I chose the follow the BIP-32 standard.
+
+I have chosen the m/🦋'/0 (m/129419'/0) derivation path.
 
 {{<atproto-blob
     pds="https://pds.edouard.paris"
@@ -109,6 +119,8 @@ the DID format. I have chosen the m/🦋'/0 derivation path.
     cid="bafkreifb4eebdkltppcbvfshvqfsgwux67quijdrmtncmvvv37auu3jicu"
     alt="Verify atproto did key"
     kind="video" >}}
+
+### Signing a genesis PLC operation
 
 To create a new did:plc, we provide the genesis block of information to be
 signed. The screen displays all the information of the PLC operation for us to
@@ -118,8 +130,10 @@ securely verify.
     pds="https://pds.edouard.paris"
     did="did:plc:sl7e2yuycnqjk24jdjmeuidn"
     cid="bafkreigxryxd6cyeqairleluwaiai46dyti7afphkrom57vmwspj6vjw3q"
-    alt="GoAccess generated HTML file"
+    alt="The Ledger Stax displaying the pages of the genesis PLC operation signing process"
     kind="video" >}}
+
+### Signing a following PLC operation
 
 When we want to modify the info again, we can sign a new op by providing the
 new block and the previous block. Because the new block commits to the previous
@@ -130,7 +144,7 @@ fields that have changed by comparing the two. Less fields to check !
     pds="https://pds.edouard.paris"
     did="did:plc:sl7e2yuycnqjk24jdjmeuidn"
     cid="bafkreifg3b5xleqgijlyghibtuiljhme2fyopgwwcfuask7igsmxtycnfu"
-    alt="GoAccess generated HTML file"
+    alt="The Ledger Stax displaying the pages of the PLC operation signing process"
     kind="video" >}}
 
 Did of the ledger: [did:plc:mxscbgwn6rdnmryqa32cdmka](https://web.plc.directory/did/did:plc:mxscbgwn6rdnmryqa32cdmka)
