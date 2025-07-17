@@ -352,6 +352,7 @@ td:first-child {
     display: block;
     max-width: calc(70ch + 5rem - 10px);
     margin: auto;
+    width: 100%;
 }
 
 .sidenote img {
