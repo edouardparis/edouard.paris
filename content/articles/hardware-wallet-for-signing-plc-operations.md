@@ -18,7 +18,7 @@ new application I am developing.
 Currently, a Bluesky identity is attached to a global identifier (did:plc)
 stored on one centralized server, the PLC directory. This identifier resolves to
 a set of public keys, which we will discuss later, and a pointer to the Personal
-Data Server (PDS) where your content is stored.
+Data Server (PDS) where the user content is stored.
 
 On the PDS, user content is cryptographically signed by an asymmetrical key,
 often hosted on the same server. Its public key is stored in the PLC directory
@@ -76,7 +76,7 @@ of the previous rotation key.
 
 
 
-If the user want to have control over your identity on the PLC directory, these
+If the user want to have control over their identity on the PLC directory, these
 rotation keys are crucial. By default, Bluesky manages one for them on the
 Bluesky PDS, but **if they want to take control, they need to generate a key that
 only they possess and share the public key with the PLC directory, assigning it a
